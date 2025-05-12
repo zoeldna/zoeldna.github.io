@@ -37,8 +37,6 @@ function createHeader() {
     navItemContainer.appendChild(aboutLink);
     navItemContainer.appendChild(projectsLink);
 
-    // Füge alle Teile zum Wrapper hinzu
-    navWrapper.appendChild(spacer);
     navWrapper.appendChild(navItemContainer);
 
     // Füge den Wrapper zum Header hinzu
