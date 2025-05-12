@@ -4,3 +4,43 @@ body {
     padding: 0;
 }
 
+.welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: darkslateblue;
+    height: 20vw;
+}
+
+.welcomeItems {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 3em;
+}
+
+.welcomeItems p {
+    font-size: 40px;
+}
+
+.welcomeItems button {
+    align-self: center;
+}
+
+.ctaBtnHome {
+    height: 2em;
+    width: 10em;
+    border-radius: 0.1em;
+    transition:
+    width 1s ease,
+    transform 1s ease,
+    background-color 1s ease,
+    box-shadow 1s ease;
+}
+
+.ctaBtnHome:hover {
+    width: 20em;
+    border-radius: 0.1em;
+    transform: scale(1.05);
+    background-color: wheat;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
