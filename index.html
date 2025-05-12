@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>My Site</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/components/header.css">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -20,7 +22,7 @@
         <!-- Hero Section Btn-Group -->
         <div class="heroBtnGroup">
             <button class="heroBtnPrimary">Projects</button>
-            <button class="heroBtnSecondary">About me</button>
+            <button class="heroBtnSecondary" onclick="scrollToSection('about')">About me</button>
         </div>
     </div>
 
@@ -33,5 +35,16 @@
 
 
 <script src="/src/js/components/header.js"></script>
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
 </body>
 </html>
