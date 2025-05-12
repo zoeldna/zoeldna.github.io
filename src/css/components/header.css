@@ -1,39 +1,51 @@
+
+
 .navHeader {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 4vw;
-    background-color: whitesmoke;
-    box-shadow: 1px 2px 4px rgba(10, 10, 10, 0.5);
+    box-shadow: 20px 80px 60px var(--accent-color);
+    background-color: var(--background-color);
+}
+
+.navWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .navItemContainer {
     display: flex;
+    flex: 1;
     justify-content: center;
     text-align: center;
-    margin: 1vw;
+    margin: 1.5vw;
     gap: 2vw;
 }
 
 .navItem {
-    color: black;
-    font-size: 22px;
-    font-weight: bolder;
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.0vw;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
     text-decoration: none;
 }
 
 .navItem:hover {
-    color: cadetblue;
+    color: var(--accent-color);
     cursor: pointer;
 }
 
 .navItem:visited {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .navItem:visited:hover {
-    color: cadetblue;
+    color: var(--accent-color);
     cursor: pointer;
     text-decoration: none;
 }

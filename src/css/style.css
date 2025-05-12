@@ -1,44 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-color: #f2ece9;
+    --background-color: #0b0604;
+    --primary-color: #e0ac95;
+    --secondary-color: #893b19;
+    --accent-color: #eb6326;
+    --accent-color-rgb: 235, 99, 38;
+    --font: 'Montserrat', sans-serif;
+}
+
 body {
-    background-color: whitesmoke;
-    margin: 0;
+    background-color: var(--background-color);
+    margin: 1px;
     padding: 0;
 }
 
-.welcomeContainer {
+.heroContainer {
+    margin-top: 2px;
     display: flex;
     flex-direction: column;
-    background-color: darkslateblue;
+    background-color: var(--background-color);
     height: 20vw;
 }
 
-.welcomeItems {
+.heroItems {
     display:flex;
     flex-direction: column;
     align-self: center;
     margin: 3em;
 }
 
-.welcomeItems p {
+.heroItems p {
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
 }
 
-.welcomeItems button {
+.heroItems button {
     align-self: center;
 }
 
-.ctaBtnHome {
+.ctaBtnhero {
+    font-family: "Montserrat", sans-serif;
     height: 2em;
     width: 10em;
     border-radius: 0.1em;
     transition:
     width 1s ease,
+    height 1s ease,
     transform 1s ease,
     background-color 1s ease,
     box-shadow 1s ease;
 }
 
-.ctaBtnHome:hover {
-    width: 20em;
+.ctaBtnhero:hover {
+    width: 11em;
+    height: 3em;
     border-radius: 0.1em;
     transform: scale(1.05);
     background-color: wheat;
