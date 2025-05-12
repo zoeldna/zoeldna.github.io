@@ -3,20 +3,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function subtitle() {
-    const container = document.createElement('div');
-    container.classList.add('subContainer');
 
-    const h2 = document.createElement('p');
-    h2.classList.add('subHeading');
+    const container = document.createElement('div')
+    container.classList.add('container')
 
-    container.appendChild(h2);
+    const text = document.createElement('p')
+    text.classList.add('text')
+    text.innerText = 'Hallo'
 
-    const idContainer = document.getElementById('subPlacementContainer');
-    console.log(idContainer); // Prüfen, ob der Container gefunden wird
+    container.appendChild(text)
 
-    if (idContainer) {
-        idContainer.appendChild(container);
-    } else {
-        console.log("Element 'subPlacementContainer' nicht gefunden");
+    const placeholder = document.getElementById('placeholder')
+    if (placeholder) {
+        placeholder.appendChild(container)
     }
 }
