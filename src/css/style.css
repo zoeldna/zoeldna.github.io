@@ -10,36 +10,71 @@
     --font: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-color: var(--background-color);
-    margin: 1px;
+    margin: 0;
     padding: 0;
 }
 
-.heroContainer {
-    margin-top: 2px;
+.heroSection {
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
-    height: 20vw;
+    padding: 0;
+    background-color: var(--primary-color);
+    height: 100vh;
 }
 
-.heroItems {
-    display:flex;
-    flex-direction: column;
-    align-self: center;
-    margin: 3em;
+.heroTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin-top: 30vh;
+    margin-bottom: 0;
+    margin-left: 2em;
+
 }
 
-.heroItems p {
+.heroSubtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-top: 1.5em;
+    margin-left: 3.5em;
+}
+
+.heroBtnGroup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-left: 5em;
+    gap: 1em;
+}
+
+.heroBtnGroup > button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    height: 50px;
+    width: 120px;
+}
+
+.heroBtnPrimary {
+    background-color: var(--accent-color);
     color: var(--text-color);
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    transition: transform 0.3s ease-in;
 }
 
-.heroItems button {
-    align-self: center;
+.heroBtnPrimary:hover {
+    transform: translateY(-10px);
 }
+
+.heroBtnSecondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
 
 .ctaBtnhero {
     font-family: "Montserrat", sans-serif;
@@ -61,4 +96,15 @@ body {
     transform: scale(1.05);
     background-color: wheat;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    height: 25em;
+}
+
+.aboutContainer > p {
+    color: var(--text-color);
 }
