@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-color: #e9eef0;
+    --background-color: #080b0c;
+    --primary-color: #a7c1cc;
+    --secondary-color: #325c6c;
+    --accent-color: #62aac7;
+    --accent-color-rgb: 235, 99, 38;
+    --font: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container_go_ios {
+
+    width: 99.9vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_go, .container_ios {
+    margin-left: 2em;
+    padding-right: 1em;
+}
+
+.go_text {
+    color: #00ADD8;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 800;
+
+    padding: 0;
+    margin: 0;
+}
+
+.zoeldna_text {
+    color: #880808;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+
+    padding: 0;
+    margin: 0;
+}
+
+.ios_text {
+    color: #F2F2F2;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 800;
+
+    padding: 0;
+    margin: 0;
+}
+
+.container_swift {
+
+    width: 99.9vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.swift_text {
+    color: #FA7343;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 800;
+
+    padding: 0;
+    margin-right: -0.8em;
+
+    transform: rotate(90deg);
+}
+
+.container_main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.container_title_subtitle {
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero_text {
+    font-size: 128px;
+    font-weight: 800;
+
+
+    padding-bottom: 0;
+    margin-bottom: 0.2em;
+}
+
+.highlight_box {
+    background-color: #1E46CD;
+    color: #F2F2F2;
+
+    padding: 0 0.2em;
+    border-radius: 0.2em;
+
+}
+
+.hero_subtitle {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+
+.container_navigation_android_kotlin {
+    font-family: 'Montserrat', sans-serif;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    z-index: 10;
+}
+
+
+.container_navigation {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10em;
+    margin-left: 2em;
+}
+
+.projects_link {
+    color: #F2F2F2;
+
+    padding-bottom: 0;
+    margin-bottom: 0.2em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 128px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.about_me_link {
+    color: #F2F2F2;
+
+    padding-bottom: 0;
+    margin-bottom: 0.2em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 128px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.container_android_kotlin {
+    display: flex;
+    flex-direction: column;
+}
+
+.kotlin_text {
+    color: #F18E33;
+
+
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 800;
+
+    padding: 0;
+    margin-right: -2em;
+    margin-left: 1.5em;
+
+    transform: rotate(270deg);
+}
+
+.android_text {
+    color: #3DDC84;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 800;
+
+    padding: 0;
+    margin-right: 0.2em;
+}
+
+/* TODO OPTIMIERUNG MEDIA QUERIES */
+
+/* ------------------ MOBILE FIRST BREAKPOINT ------------------ */
+@media (max-width: 767px) {
+
+    .container_go_ios,
+    .container_swift,
+    .container_navigation_android_kotlin {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container_go, .container_ios,
+    .container_android_kotlin {
+        margin-left: 0;
+        padding-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .go_text,
+    .ios_text,
+    .swift_text,
+    .kotlin_text,
+    .android_text {
+        font-size: 32px;
+        transform: none;
+        margin: 0.5em 0;
+    }
+
+    .container_main_content {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .hero_text {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .hero_subtitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .projects_link,
+    .about_me_link {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .container_navigation {
+        margin: 2em 0;
+        align-items: center;
+    }
+
+    .container_navigation_android_kotlin {
+        position: relative;
+        width: 100%;
+        bottom: auto;
+    }
+
+    .highlight_box {
+        display: inline-block;
+    }
+}
+
+/* ------------------ TABLET BREAKPOINT ------------------ */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero_text {
+        font-size: 72px;
+    }
+
+    .hero_subtitle {
+        font-size: 36px;
+    }
+
+    .projects_link,
+    .about_me_link {
+        font-size: 72px;
+    }
+
+    .go_text,
+    .ios_text,
+    .swift_text,
+    .kotlin_text,
+    .android_text {
+        font-size: 48px;
+    }
+
+    .container_main_content {
+        margin-left: 1.5em;
+    }
+}
+
+/* ------------------ DESKTOP LARGE SCREENS ------------------ */
+@media (min-width: 1921px) {
+    .hero_text {
+        font-size: 112px;
+    }
+
+    .hero_subtitle {
+        font-size: 56px;
+    }
+
+    .container_main_content {
+        margin-top: -1.3em;
+    }
+
+    .hero_text {
+        margin-top: 1em;
+    }
+
+    .container_navigation {
+        margin-top: 6em;
+        margin-left: 2em;
+    }
+
+
+
+    .projects_link {
+
+    }
+    .about_me_link {
+        font-size: 128px;
+    }
+
+    .go_text,
+    .ios_text,
+    .swift_text,
+    .kotlin_text,
+    .android_text {
+        font-size: 80px;
+    }
+}
+
+/* ------------------ LAPTOP BREAKPOINT (13" – 16") ------------------ */
+@media (min-width: 1025px) and (max-width: 1920px) {
+
+    .hero_text {
+        font-size: 72px;
+        line-height: 1.1;
+    }
+
+    .hero_subtitle {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .projects_link,
+    .about_me_link {
+        font-size: 88px;
+        line-height: 1.2;
+    }
+
+    .go_text,
+    .ios_text,
+    .zoeldna_text{
+        font-size: 56px;
+    }
+
+    .swift_text {
+        font-size: 56px;
+        transform: rotate(90deg);
+        margin-right: -0.8em;
+    }
+
+    .kotlin_text {
+        font-size: 56px;
+        transform: rotate(270deg);
+        margin-right: -2.2em;
+        margin-bottom: 1.5em;
+        margin-left: 1em;
+    }
+
+    .android_text {
+        font-size: 56px;
+    }
+
+    .container_main_content {
+        margin-top: 6em;
+        margin-bottom: 10em;
+    }
+
+
+    .container_navigation {
+        margin-top: 6em;
+        margin-left: 2em;
+    }
+
+    .container_navigation_android_kotlin {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        justify-content: space-between;
+        z-index: 10;
+    }
+
+    .highlight_box {
+        padding: 0.1em 0.3em;
+        font-size: 0.95em;
+    }
+}
+
+
+

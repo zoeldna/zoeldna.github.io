@@ -2,55 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Site</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/components/header.css">
+    <title>zoeldna</title>
 
+    <link rel="stylesheet" href="/src/css/newIndex.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <div id="header-placeholder"></div>
 
-    <!-- Hero Section -->
-    <div class="heroSection">
+    <!-- Inhalt :: Go (links-start) und iOS (rechts-end) Text -->
+    <div id="container_go_ios"> <!-- row -->
 
-        <div class="heroSectionText">
-            <p class="heroTitle">My Portfolio</p>
-            <p class="heroSubtitle">I'm a self-thought Developer with well-rounded experience in Full-Stack Development</p>
-        </div>
+        <!-- div container_go :: go -->
+        <!-- div container_ios :: ios -->
 
-        <!-- Hero Section Btn-Group -->
-        <div class="heroBtnGroup">
-            <button class="heroBtnPrimary">Projects</button>
-            <button class="heroBtnSecondary" onclick="scrollToSection('about')">About me</button>
-        </div>
-    </div>
-
-    <!-- About me Section -->
-    <div class="aboutContainer" id="about">
-        <h2>About Me</h2>
-        <div id="placeholder"></div>
-        <div id="jsonDemoContainer" >
-            <div id="jDataContainer"></div>
-        </div>
     </div>
 
 
+    <!-- Inhalt :: swift (end - rotated) Text -->
+    <div id="container_swift"> <!-- row -->
+
+        <!-- div container_swift :: swift (rotated) -->
+
+    </div>
 
 
+    <!-- Inhalt :: hauptinhaltstext -->
+    <div id="container_main_content"> <!-- column -->
 
-    <script src="/src/js/components/header.js"></script>
-    <script src="/src/js/components/aboutMe.js"></script>
-    <script>
-        function scrollToSection(id) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-    </script>
+        <!-- div container_title_subtitle  -->
+
+    </div>
+
+
+    <!-- Inhalt :: projects/aboutme (links) :: android kotlin  -->
+    <div id="container_navigation_android_kotlin"> <!-- row -->
+
+        <!-- div navigation  --> <!-- column -->
+
+        <!-- div android_kotlin  --> <!-- column -->
+
+    </div>
+
+
+    <script src="/src/js/newIndex.js"></script>
+
 </body>
 </html>
