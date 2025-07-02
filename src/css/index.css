@@ -117,8 +117,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate-background 200s linear infinite;
-
+    animation: animate-background 100s linear infinite;
 
 }
 
@@ -173,12 +172,58 @@ body {
 }
 
 body.fade-in {
-    animation: fadeIn 6s forwards;
+    animation: fadeIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
     to {
         opacity: 100;
         transform: scale(1)
+    }
+}
+
+/* ------------------ Mobile BREAKPOINT ------------------ */
+
+@media (min-width: 1025px) and (max-width: 1250px) {
+    .hero_container > p {
+        font-size: 22px;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    .hero_container > h1 {
+        font-size: 92px;
+    }
+
+    .hero_container > p {
+        font-size: 18px;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+    .hero_container > h1 {
+        font-size: 64px;
+    }
+
+    .hero_container > p {
+        font-size: 16px;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+}
+
+@media (max-width: 399px) {
+    .hero_container > h1 {
+        font-size: 24px;
+    }
+
+    .hero_container > p {
+        font-size: 6px;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
     }
 }
